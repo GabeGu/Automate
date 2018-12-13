@@ -1,13 +1,13 @@
 @echo off
 
 ::echo  --------------------------------------
-::echo ^|�滻Eclipse��Make Cleanָ��           ^|
-::echo ^|��ɾ������·���µ�����.o��.d���͵��ļ�^|
+::echo ^|替换Eclipse的Make Clean指令           ^|
+::echo ^|将删除工程路径下的所有.o和.d类型的文件^|
 ::echo  --------------------------------------
 
 echo Make Clean.bat
 if "%1" == "" (
-    echo ��ʹ�������еķ�ʽ���ã����빤��·��
+    echo 请使用命令行的方式调用，传入工程路径
     ::pause
     exit
 ) else (
