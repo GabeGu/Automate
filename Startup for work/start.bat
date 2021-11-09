@@ -1,6 +1,6 @@
 @echo off
 
-set path=%path%;C:\Program Files\Internet Explorer 
+:: set path=%path%;C:\Program Files\Internet Explorer 
 
 echo starting WeChat...
 start "" "E:\Program Files (x86)\Tencent\WeChat\WeChat.exe"
@@ -11,24 +11,21 @@ start "" "E:\Program Files (x86)\Everything\Everything.exe"
 @ping 127.0.0.1 -n 5 >nul
 
 echo starting 698解析工具...
-start "" "E:\Software\工具\通讯工具\698解析工具\RTX.exe"
+start "" "D:\platform_module\tools\698meter\dist\698meter\RTX.exe"
 @ping 127.0.0.1 -n 5 >nul
 
 echo starting Eclipse...
-start "" "E:\Software\工具\开发工具\Eclipse\eclipse neon\eclipse.exe"
+start "" "E:\Program Files\eclipse\eclipse.exe"
 @ping 127.0.0.1 -n 5 >nul
 
-echo starting wallcat...
-start "" "E:\Program Files\Wallcat.exe"
-@ping 127.0.0.1 -n 5 >nul
-
-echo starting v2ray...
+echo starting FoxitReader...
 start "" "E:\Program Files\Foxit Reader\FoxitReader.exe"
 @ping 127.0.0.1 -n 5 >nul
 
+echo starting DingTalk...
+start "" "C:\Program Files (x86)\DingDing\DingtalkLauncher.exe"
+@ping 127.0.0.1 -n 5 >nul
 
-:: delete Bcompare's files
-::del /Q "c:\Users\guguibin\AppData\Roaming\Scooter Software\Beyond Compare 3\*.*
-::echo done...
-
-::@ping 127.0.0.1 -n 5 >nul
+echo starting chrome...
+start "" "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+@ping 127.0.0.1 -n 5 >nul
